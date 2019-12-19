@@ -137,5 +137,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "webpack-route-manifest": "^1.1.0"
   }
 }

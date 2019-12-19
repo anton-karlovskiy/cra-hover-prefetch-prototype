@@ -27,6 +27,11 @@ const typescriptFormatter = require('react-dev-utils/typescriptFormatter');
 
 const postcssNormalize = require('postcss-normalize');
 
+// ray test touch <
+// MEMO: route manifest configuration for quicklink
+const RouteManifest = require('webpack-route-manifest');
+// ray test touch >
+
 const appPackageJson = require(paths.appPackageJson);
 
 // Source maps are resource heavy and can cause out of memory issue for large source files.
@@ -653,6 +658,19 @@ module.exports = function(webpackEnv) {
           // The formatter is invoked directly in WebpackDevServerUtils during development
           formatter: isEnvProduction ? typescriptFormatter : undefined,
         }),
+      // ray test touch <
+      // MEMO: route manifest configuration for quicklink
+      new RouteManifest({
+        minify: true,
+        filename: 'rmanifest.json',
+        routes(str) {
+          let out = str.replace('./components', '/pages').toLowerCase();
+          if (out === '/pages/home') return '/';
+          console.log('ray : [config webpack.config RouteManifest] out => ', out)
+          return out;
+        }
+      }),
+      // ray test touch >
     ].filter(Boolean),
     // Some libraries import Node modules but don't use them in the browser.
     // Tell Webpack to provide empty mocks for them so importing them works.
