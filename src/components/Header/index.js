@@ -1,7 +1,5 @@
 
-// ray test touch <
 import React from 'react';
-// import { Link } from 'react-router-dom';
 
 import PrefetchLink from '../../hoc/PrefetchLink';
 import './header.css';
@@ -9,10 +7,6 @@ import './header.css';
 const Header = () => (
   <header>
     <ul className="navbar">
-      {/* <li><Link to="/">Home</Link></li>
-      <li><Link to="/pages/world">World</Link></li>
-      <li><Link to="/pages/tech">Tech</Link></li>
-      <li><Link to="/pages/contact">Contact</Link></li> */}
       <div className="flex">
         <li><PrefetchLink to="/">Home</PrefetchLink></li>
         <li><PrefetchLink to="/pages/world">World</PrefetchLink></li>
@@ -25,4 +19,3 @@ const Header = () => (
 );
 
 export default Header;
-// ray test touch >

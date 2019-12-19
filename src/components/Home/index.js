@@ -15,11 +15,8 @@ limitations under the License.
 */
 
 import React from 'react';
-// ray test touch <
-// import { Link } from 'react-router-dom';
 
 import PrefetchLink from '../../hoc/PrefetchLink';
-// ray test touch >
 
 const Home = () => {
   return (
@@ -44,16 +41,10 @@ const Home = () => {
         <div className="left column">
           <h4 className="list-title">Trending Articles</h4>
           <ul className="vertical-list">
-            {/* ray test touch < */}
-            {/* <li className="list-item"><Link to="/pages/article1" className="post-link">Article 1</Link></li>
-            <li className="list-item"><Link to="/pages/article2" className="post-link">Article 2</Link></li>
-            <li className="list-item"><Link to="/pages/article3" className="post-link">Article 3</Link></li>
-            <li className="list-item"><Link to="/pages/article4" className="post-link">Article 4</Link></li> */}
             <li className="list-item"><PrefetchLink to="/pages/article1" className="post-link">Article 1</PrefetchLink></li>
             <li className="list-item"><PrefetchLink to="/pages/article2" className="post-link">Article 2</PrefetchLink></li>
             <li className="list-item"><PrefetchLink to="/pages/article3" className="post-link">Article 3</PrefetchLink></li>
             <li className="list-item"><PrefetchLink to="/pages/article4" className="post-link">Article 4</PrefetchLink></li>
-            {/* ray test touch > */}
           </ul>
         </div>
         <div className="right column">

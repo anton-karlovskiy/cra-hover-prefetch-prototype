@@ -1,5 +1,4 @@
 
-// ray test touch <
 import React from 'react';
 import { prefetch } from 'quicklink';
 import rmanifest from 'route-manifest';
@@ -9,8 +8,6 @@ import './prefetch-link.css';
 
 const PrefetchLink = ({ children, to, ...rest }) => {
   const onMouseEnterHandler = async event => {
-    console.log('[hoc PrefetchLink] to => ', to);
-
     if (!window._rmanifest_) {
       console.log('[hoc PrefetchLink] route manifest is not stored');
       const response = await fetch('/rmanifest.json');
@@ -23,7 +20,7 @@ const PrefetchLink = ({ children, to, ...rest }) => {
     
     const entry = rmanifest(window._rmanifest_, to);
     const chunkURLs = entry.files.map(file => file.href);
-    console.log('[hoc PrefetchLink] chunkURLs, to => ', chunkURLs, to);
+    console.log('[hoc PrefetchLink] to, chunkURLs => ', to, chunkURLs);
     if (chunkURLs.length > 0) {
       prefetch(chunkURLs);
     }
@@ -37,4 +34,3 @@ const PrefetchLink = ({ children, to, ...rest }) => {
 };
 
 export default PrefetchLink;
-// ray test touch >
