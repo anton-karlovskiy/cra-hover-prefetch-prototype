@@ -30,6 +30,7 @@ header {
   width: 100%;
 }
 
+/* ray test touch < */
 ul.navbar {
   list-style-type: none;
   margin: 0;
@@ -37,14 +38,18 @@ ul.navbar {
   overflow: hidden;
   background-color: #4CAF50;
 }
+/* ray test touch > */
 
-ul.navbar > li > a {
-  float: left;
-  display: block;
+/* ray test touch < */
+/* ul.navbar > li > a { */
+ul.navbar li a {
+  /* float: left; */
+  /* display: block; */
   color: white;
   text-align: center;
   padding: 14px 16px;
 }
+/* ray test touch > */
 
 section {
   display: flex;
@@ -134,10 +139,12 @@ li {
   margin: 10px 0;
 }
 
+/* ray test touch < */
 .profile-icon {
-  float:right;
+  /* float:right; */
   padding: 10px 16px
 }
+/* ray test touch > */
 
 .column {
   width: 100%;
