@@ -663,7 +663,6 @@ module.exports = function(webpackEnv) {
         routes(str) {
           let out = str.replace('./components', '/pages').toLowerCase();
           if (out === '/pages/home') return '/';
-          console.log('ray : [config webpack.config RouteManifest] out => ', out)
           return out;
         }
       }),
