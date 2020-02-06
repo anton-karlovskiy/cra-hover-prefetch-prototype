@@ -142,6 +142,6 @@
     ]
   },
   "devDependencies": {
-    "webpack-route-manifest": "^1.1.0"
+    "webpack-route-manifest": "git+https://github.com/lukeed/webpack-route-manifest.git"
   }
 }
