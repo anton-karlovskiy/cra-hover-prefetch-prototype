@@ -3409,9 +3409,9 @@ dns-equal@^1.0.0:
   integrity sha1-s55/HabrCnW6nBcySzR1PEfgZU0=
 
 dns-packet@^1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/dns-packet/-/dns-packet-1.3.1.tgz#12aa426981075be500b910eedcd0b47dd7deda5a"
-  integrity sha512-0UxfQkMhYAUaZI+xrNZOz/as5KgDU0M/fQ9b6SpkyLbk3GEswDi6PADJVaYJradtRVsRIlF1zLyOodbcTCDzUg==
+  version "1.3.4"
+  resolved "https://registry.yarnpkg.com/dns-packet/-/dns-packet-1.3.4.tgz#e3455065824a2507ba886c55a89963bb107dec6f"
+  integrity sha512-BQ6F4vycLXBvdrJZ6S3gZewt6rcrks9KBgM9vrhW+knGRqc8uEdT7fuCwloc7nny5xNoMJ17HGH0R/6fpo8ECA==
   dependencies:
     ip "^1.1.0"
     safe-buffer "^5.0.1"
@@ -8592,6 +8592,11 @@ regexp.prototype.flags@^1.2.0:
   dependencies:
     define-properties "^1.1.2"
 
+regexparam@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/regexparam/-/regexparam-1.3.0.tgz#2fe42c93e32a40eff6235d635e0ffa344b92965f"
+  integrity sha512-6IQpFBv6e5vz1QAqI+V4k8P2e/3gRrqfCJ9FI+O1FLQTO+Uz6RXZEZOPmTJ6hlGj7gkERzY5BRCv09whKP96/g==
+
 regexpp@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/regexpp/-/regexpp-2.0.1.tgz#8d19d31cf632482b589049f8281f93dbcba4d07f"
@@ -8852,6 +8857,18 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
+route-manifest@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/route-manifest/-/route-manifest-1.0.0.tgz#0155513f3cd158c18827413845ab1a8ec2ad15e1"
+  integrity sha512-qn0xJr4nnF4caj0erOLLAHYiNyzqhzpUbgDQcEHrmBoG4sWCDLnIXLH7VccNSxe9cWgbP2Kw/OjME+eH3CeRSA==
+  dependencies:
+    regexparam "^1.3.0"
+
+route-sort@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/route-sort/-/route-sort-1.0.0.tgz#078149c8d2d2de8b8563adf139ec58476835c94b"
+  integrity sha512-SFgmvjoIhp5S4iBEDW3XnbT+7PRuZ55oRuNjY+CDB1SGZkyCG9bqQ3/dhaZTctTBYMAvDxd2Uy9dStuaUfgJqQ==
+
 rsvp@^4.8.4:
   version "4.8.5"
   resolved "https://registry.yarnpkg.com/rsvp/-/rsvp-4.8.5.tgz#c8f155311d167f68f21e168df71ec5b083113734"
@@ -8884,9 +8901,9 @@ safe-buffer@5.1.2, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   integrity sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==
 
 safe-buffer@>=5.1.0, safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@^5.1.1, safe-buffer@^5.1.2, safe-buffer@~5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.2.0.tgz#b74daec49b1148f88c64b68d49b1e815c1f2f519"
-  integrity sha512-fZEwUGbVl7kouZs1jCdMLdt95hdIv0ZeHg6L7qPeciMZhZ+/gdesW4wgTARkrFWEpspjEATAzUGPG8N2jJiwbg==
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
+  integrity sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==
 
 safe-regex@^1.1.0:
   version "1.1.0"
@@ -10253,6 +10270,13 @@ webpack-manifest-plugin@2.2.0:
     lodash ">=3.5 <5"
     object.entries "^1.1.0"
     tapable "^1.0.0"
+
+webpack-route-manifest@^1.1.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/webpack-route-manifest/-/webpack-route-manifest-1.2.0.tgz#ade58d48594f067a6f82aa9a5d639007e75d6ae1"
+  integrity sha512-JzWnMEzrioenlM38p7OuOWIr1xjQQpeAI/ktb0ZNYv/s5507JHmkYS6YzZsOpYhqqanN/keGAYD/JT/zLMs+LA==
+  dependencies:
+    route-sort "^1.0.0"
 
 webpack-sources@^1.1.0, webpack-sources@^1.4.0, webpack-sources@^1.4.1, webpack-sources@^1.4.3:
   version "1.4.3"
